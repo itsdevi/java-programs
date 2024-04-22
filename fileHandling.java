@@ -5,8 +5,8 @@ import java.io.IOException;
 class fileHandling {
     public static void main(String[] args) {
         try{
-            FileInputStream obj1 = new FileInputStream("file1.txt");
-            FileOutputStream obj2 =new FileOutputStream("file2.txt");
+            FileInputStream obj1 = new FileInputStream("file1.txt"); //open textfile as input
+            FileOutputStream obj2 =new FileOutputStream("file2.txt"); //open textfile as outout
             int i;
             while((i=obj1.read())!=-1)
                 obj2.write(i);
